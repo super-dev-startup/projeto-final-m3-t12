@@ -14,14 +14,11 @@ servicos/:id | DELETE, PUT & POST
 servicos/portfolio/:id | PUT, DELETE & GET
 contatos | POST & GET
 contatos/:id | PUT, DELETE
-|   |  |
-| ------- | ----- |
-| / |  |
-| / |  |
-| / |  |
-| / |  |
-| / |  |
-| / |  |
+|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 2.  **Features do Front**
  - Descrição da atividade profissional do proprietário do site
  - Links dos contatos do proprietário no cabeçalho do site
