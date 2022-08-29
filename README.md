@@ -7,7 +7,7 @@
 ## Quais as features da aplicação?
 1.  **Endpoints**
 2.  Rota   | Tipo
-:--------- | ------:
+:---------: | :------:
 apresentação | PUT & GET
 servicos | GET & POST
 servicos/:id | DELETE, PUT & POST
