@@ -6,14 +6,14 @@
 -   Como forma de cobrir esse gap, pensamos em uma solução que fosse viável criar projetos personalizados seguindo um padrão de: Apresentação profissional, serviços/produtos disponíveis, portfólio, contratação do serviço e envio de dúvida ou proposta para o profissional. Para a execução desse MVP, escolhemos um cliente que é fotógrafo e precisa de um site personalizado.
 ## Quais as features da aplicação?
 1.  **Endpoints**
-|Rota  | Tipo|
-|-------|-----|
-|/apresentação | PUT & GET|
-|/servicos | GET & POST|
-|/servicos/:id | DELETE, PUT & POST|
-|/servicos/portfolio/:id | PUT, DELETE & GET|
-|/contatos | POST & GET|
-|/contatos/:id | PUT, DELETE|
+| Rota  | Tipo |
+| ------- | ----- |
+| /apresentação | PUT & GET |
+| /servicos | GET & POST |
+| /servicos/:id | DELETE, PUT & POST |
+| /servicos/portfolio/:id | PUT, DELETE & GET |
+| /contatos | POST & GET |
+| /contatos/:id | PUT, DELETE |
 2.  **Features do Front**
  - Descrição da atividade profissional do proprietário do site
  - Links dos contatos do proprietário no cabeçalho do site
