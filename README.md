@@ -10,16 +10,17 @@
 |  Rota                  | Tipo              |
 |----------------------  | ------------------|
 |/login                  | POST              |
-|/apresentacao/1         | PUT & GET         |
+|/apresentation/1        | PUT & GET         |
 |/servicos               | GET & POST        |
-|/servicos/:id           | DELETE, PUT & POST|
-|/contatos               | POST & GET        |
-|/contatos/:id           | PUT, DELETE       |
+|/servicos/:id           | DELETE & PUT      |
+|/contacts               | POST & GET        |
+|/contacts/:id           | PUT, DELETE       |
 
 ### API
 URL base --> https://project-m3-kenzie.herokuapp.com/
 
->> **LOGIN**
+> **LOGIN**
+> **POST** `/login`
 
 Faça o login com:
 
@@ -43,6 +44,14 @@ O objeto de retorno será:
 	}
 }
 ```
+
+> **Métodos que precisam de Autenticação**
+> 
+> > **PUT** `/apresentation/1`
+> > **POST** `/services`
+> > **PUT POST DELETE** `/services/:id`
+> > **POST** `/contacts`
+> > **PUT POST DELETE** `/contatos/:id`
 
 
 2.  **Features do Front**
