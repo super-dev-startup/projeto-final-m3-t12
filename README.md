@@ -1,5 +1,5 @@
-# SuperDevs Sturtup
-**Somos uma sturtup que facilita a vida de profissionais auitônomos que precisam aumentar sua presença digital, sem abrir mão de qualidade e eficiência. _Somos #1 em custo benefício_**
+# SuperDevs Startup
+**Somos uma startup que facilita a vida de profissionais auitônomos que precisam aumentar sua presença digital, sem abrir mão de qualidade e eficiência. _Somos #1 em custo benefício_**
 ## Qual problema estamos resolvendo?
 -   Em um mundo cada vez mais digital, os padrões de consumo e pesquisa por produtos e serviços mudaram radicalmente, tudo acontece pela internet. Sabemos que os profissionais precisam acompanhar as mudanças que essa digitalização traz, é muito importante que seus serviços e produtos estejam disponível nesse novo ambiente. Porém ainda há uma dificuldade em estabelecer uma presença digital e ter um portfólio profissional publicado na internet e apenas perfis profissionais nas redes sociais não são mais suficientes para estabelecer essa presença. As principais causas dessa dificuldade são os altos valores para criação de sites personalizados, o difícil acesso aos profissionais qualificados para direcionar as necessidades do cliente para um solução eficiente e a falta de personalização adequada por meio das plataformas que criar sites mais generalistas.
 ## Qual é a solução?
