@@ -46,11 +46,11 @@ O objeto de retorno será:
 ```
 
 > **Métodos que precisam de Autenticação**
-> > **PUT** `/apresentation/1` <br/>
-> > **POST** `/services` <br/>
-> > **PUT POST DELETE** `/services/:id` <br/>
-> > **POST** `/contacts` <br/>
-> > **PUT POST DELETE** `/contatos/:id`
+> > **PUT** `/apresentation/1` <br/> <br/>
+> > **POST** `/services` <br/> <br/>
+> > **PUT, POST, DELETE** `/services/:id` <br/> <br/>
+> > **POST** `/contacts` <br/> <br/>
+> > **PUT, POST, DELETE** `/contatos/:id`
 
 
 2.  **Features do Front**
