@@ -9,12 +9,37 @@
 
 |  Rota                  | Tipo              |
 |----------------------  | ------------------|
-|/apresentação           | PUT & GET         |
+|/login                  | POST              |
+|/apresentacao/1         | PUT & GET         |
 |/servicos               | GET & POST        |
 |/servicos/:id           | DELETE, PUT & POST|
-|/servicos/portfolio/:id | PUT, DELETE & GET |
 |/contatos               | POST & GET        |
 |/contatos/:id           | PUT, DELETE       |
+
+### API
+URL base --> https://project-m3-kenzie.herokuapp.com/
+
+**LOGIN**
+Faça o login com:
+'''
+{
+	"email": "fotographer@mail.com",
+	"password": "123456"
+}
+'''
+O objeto de retorno será:
+'''
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZvdG9ncmFwaGVyQG1haWwuY29tIiwiaWF0IjoxNjYxODkxMjE5LCJleHAiOjE2NjE4OTQ4MTksInN1YiI6ImFkbWluIn0.9lgbx_atZMz-_d7IsxjFZLP7PWnUhsQ3d5cAGqNv83A",
+	"user": {
+		"email": "fotographer@mail.com",
+		"name": "Tyler",
+		"age": 38,
+		"id": "admin"
+	}
+}
+'''
+
 
 2.  **Features do Front**
  - Descrição da atividade profissional do proprietário do site
