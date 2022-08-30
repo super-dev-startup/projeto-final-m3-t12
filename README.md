@@ -22,19 +22,16 @@ URL base --> https://project-m3-kenzie.herokuapp.com/
 **LOGIN**
 Faça o login com:
 
-'''
-
+```
 {
 	"email": "fotographer@mail.com",
 	"password": "123456"
 }
-
-'''
+```
 
 O objeto de retorno será:
 
-'''
-
+```
 {
 	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZvdG9ncmFwaGVyQG1haWwuY29tIiwiaWF0IjoxNjYxODkxMjE5LCJleHAiOjE2NjE4OTQ4MTksInN1YiI6ImFkbWluIn0.9lgbx_atZMz-_d7IsxjFZLP7PWnUhsQ3d5cAGqNv83A",
 	"user": {
@@ -44,8 +41,7 @@ O objeto de retorno será:
 		"id": "admin"
 	}
 }
-
-'''
+```
 
 
 2.  **Features do Front**
