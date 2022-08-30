@@ -37,4 +37,4 @@
 - Figma
 - Git Hub
 ### O nível de complexidade estimado do projeto é de 7,5 (1-10)
-[Links do projeto](https://linktr.ee/)
+[Links do projeto](https://linktr.ee/superdevs)
