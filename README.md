@@ -46,11 +46,10 @@ O objeto de retorno será:
 ```
 
 > **Métodos que precisam de Autenticação**
-> 
-> > **PUT** `/apresentation/1`
-> > **POST** `/services`
-> > **PUT POST DELETE** `/services/:id`
-> > **POST** `/contacts`
+> > **PUT** `/apresentation/1` <br/>
+> > **POST** `/services` <br/>
+> > **PUT POST DELETE** `/services/:id` <br/>
+> > **POST** `/contacts` <br/>
 > > **PUT POST DELETE** `/contatos/:id`
 
 
