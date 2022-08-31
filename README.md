@@ -19,8 +19,17 @@
 ### API
 URL base --> https://project-m3-kenzie.herokuapp.com/
 
+
+> **Métodos que precisam de Autenticação**
+> > **PUT** `/apresentation/1` <br/> <br/>
+> > **POST** `/services` <br/> <br/>
+> > **PUT, POST, DELETE** `/services/:id` <br/> <br/>
+> > **POST** `/contacts` <br/> <br/>
+> > **PUT, POST, DELETE** `/contatos/:id`
+
+
 > **LOGIN**
-> **POST** `/login`
+> **POST** Endpoint: `/login`
 
 Faça o login com:
 
@@ -45,12 +54,25 @@ O objeto de retorno será:
 }
 ```
 
-> **Métodos que precisam de Autenticação**
-> > **PUT** `/apresentation/1` <br/> <br/>
-> > **POST** `/services` <br/> <br/>
-> > **PUT, POST, DELETE** `/services/:id` <br/> <br/>
-> > **POST** `/contacts` <br/> <br/>
-> > **PUT, POST, DELETE** `/contatos/:id`
+> **APRENSATAÇÃO**
+> **PUT ou GET** Endpoint: `/apresentation/1`
+
+* OBS: Em caso de alteração(PUT) a requisição deve ser feita enviando todos os dados, modificando apenas o(s) qual(is) se pretende alterar. Todos os atributos do objeto podem ser alterados.
+
+O objeto de retorno será:
+
+```
+{
+    "title": "Sua bio aqui",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "body": " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "born-in": "New York",
+    "experience": "7+",
+    "date-of-birth": "27 June 1992",
+    "project-completed": "50+",
+    "happy-cliente": "30+"
+}
+```
 
 
 2.  **Features do Front**
