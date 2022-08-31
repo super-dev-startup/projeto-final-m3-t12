@@ -1,1 +1,0 @@
-Nesta pasta deve conter apenas o componente de rotas da aplicação.
