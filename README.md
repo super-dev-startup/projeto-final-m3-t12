@@ -54,7 +54,7 @@ O objeto de retorno será:
 }
 ```
 
-> **APRENSATAÇÃO**
+> **APRESENTAÇÃO**
 > **PUT ou GET** Endpoint: `/apresentation/1`
 
 * OBS: Em caso de alteração(PUT) a requisição deve ser feita enviando todos os dados, modificando apenas o(s) qual(is) se pretende alterar. Todos os atributos do objeto podem ser alterados.
