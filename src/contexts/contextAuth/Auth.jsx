@@ -1,5 +1,5 @@
 /*
-import { createContext, useState, useEffect } from "react";
+import  { createContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // import { api, createSession } from "../api/request"; // Este import é pra depois que tivermos as request da api criadas.
 export const AthContext = createContext();
