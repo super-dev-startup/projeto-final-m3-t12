@@ -9,12 +9,153 @@
 
 |  Rota                  | Tipo              |
 |----------------------  | ------------------|
-|/apresentação           | PUT & GET         |
+|/login                  | POST              |
+|/apresentation          | PUT & GET         |
 |/servicos               | GET & POST        |
-|/servicos/:id           | DELETE, PUT & POST|
-|/servicos/portfolio/:id | PUT, DELETE & GET |
-|/contatos               | POST & GET        |
-|/contatos/:id           | PUT, DELETE       |
+|/servicos/:id           | DELETE & PUT      |
+|/contacts               | POST & GET        |
+|/contacts/:id           | PUT, DELETE       |
+
+### API
+URL base --> https://project-m3-kenzie.herokuapp.com/
+
+
+> **Métodos que precisam de Autenticação**
+> **PUT** `/apresentation/1` <br/> <br/>
+> **POST** `/services` <br/> <br/>
+> **PUT, POST, DELETE** `/services/:id` <br/> <br/>
+> **POST** `/contacts` <br/> <br/>
+> **PUT, POST, DELETE** `/contatos/:id`<br/>
+
+------------------------------------------ <br/>
+> **LOGIN** -->
+> **POST** Endpoint: `/login`
+
+Faça o login com:
+
+```
+{
+	"email": "fotographer@mail.com",
+	"password": "123456"
+}
+```
+
+O objeto de retorno será:
+
+```
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZvdG9ncmFwaGVyQG1haWwuY29tIiwiaWF0IjoxNjYxODkxMjE5LCJleHAiOjE2NjE4OTQ4MTksInN1YiI6ImFkbWluIn0.9lgbx_atZMz-_d7IsxjFZLP7PWnUhsQ3d5cAGqNv83A",
+	"user": {
+		"email": "fotographer@mail.com",
+		"name": "Tyler",
+		"age": 38,
+		"id": "admin"
+	}
+}
+```
+
+<br/> <br/>
+> **APRESENTAÇÃO** -->
+> **PUT ou GET** Endpoint: `/apresentation`
+
+* OBS: Em caso de alteração(PUT) a requisição deve ser feita enviando todos os dados, modificando apenas o(s) qual(is) se pretende alterar. Todos os atributos do objeto podem ser alterados.
+
+O objeto de retorno será:
+
+```
+{
+    "title": "Sua bio aqui",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "body": " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "born-in": "New York",
+    "experience": "7+",
+    "date-of-birth": "27 June 1992",
+    "project-completed": "50+",
+    "happy-cliente": "30+"
+}
+```
+
+<br/> <br/>
+> **CONTACTS** -->
+> **PUT, POST ou GET** Endpoint: `/contacts`
+
+Objeto da requisição POST: 
+
+```
+{
+	"plataforma": "url"
+}
+```
+
+O objeto de retorno da requisão GET será:
+
+```
+[
+	{
+		"whatsapp": "Use PUT pata alterar",
+		"id": 1
+	},
+	{
+		"instagram": "Use PUT pata alterar",
+		"id": 2
+	},
+	{
+		"twitter": "Use PUT pata alterar",
+		"id": 3
+	},
+	{
+		"facebook": "Use PUT pata alterar",
+		"id": 4
+	},
+	{
+		"email": "fotographer@mail.com",
+		"id": 5
+	}
+]
+```
+ <br/> <br/>
+> **SERVICES** -->
+> **PUT, POST ou GET** Endpoint: `/services`
+
+Objeto da requisição POST:
+
+```
+{
+	"name": "string"
+	"price": number
+	"portfolio": url["string"]
+}
+```
+
+O objeto de retorno da requisão GET será:
+
+```
+[
+	{
+		"name": "graduation",
+		"price": 600,
+		"portfolio": [
+			"img1",
+			"img2",
+			"img3"
+		],
+		"id": 1
+	},
+	{
+		"name": "wedding",
+		"price": 900,
+		"id": 2,
+		"portfolio": [
+			"img4",
+			"img5",
+			"img6"
+		]
+	}
+]
+```
+
+
+------------------------------------------
 
 2.  **Features do Front**
  - Descrição da atividade profissional do proprietário do site
