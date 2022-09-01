@@ -11,7 +11,7 @@
 |----------------------  | ------------------|
 |/login                  | POST              |
 |/apresentation          | PUT & GET         |
-|/servicos               | GET & POST        |
+|/services               | GET & POST        |
 |/servicos/:id           | DELETE & PUT      |
 |/contacts               | POST & GET        |
 |/contacts/:id           | PUT, DELETE       |
