@@ -1,11 +1,11 @@
-/* import { useState, useEffect } from "react"; 
-import axios from "axios"; 
-import api from "../../api"
-*/
-import  { StyledIntro, StyledText, StyledWrapperInfo, Section } from "./style"
+import { useState, useEffect } from "react"; 
+import api from "../../api/api"
+
+import  { Main, StyledIntro, StyledText, StyledWrapperInfo, Section } from "./style"
+import Vector from "../../imgs/Vector.png"
 
 function ApresentationPage() {
-    /* const [user, setUser] = useState({})
+    const [user, setUser] = useState({})
 
     useEffect(() => {
         api
@@ -16,12 +16,17 @@ function ApresentationPage() {
         .catch((error) => {
           console.log(error);
         });
-  }, []); */
-
+  }, []);
+  console.log(user)
     return(
-        <main>
+        <>
+        <Main>
             <StyledIntro>
-                <h3>Tyler Barthold</h3>
+                <div className="name">
+                    <h3>Tyler</h3>
+                    <img src={Vector} alt="logo" />
+                    <h3>Barthold</h3>
+                </div>
                 <h1>Best creative and modern fotographer.</h1>
             </StyledIntro>
             <article>
@@ -46,6 +51,7 @@ function ApresentationPage() {
                     </div>
                 </StyledWrapperInfo>
             </article>
+            </Main>
             <Section>
                 <div className="StledContainer">
                     <h1>7+</h1>
@@ -60,8 +66,8 @@ function ApresentationPage() {
                     <p>HAPPY CLIENTS</p>
                 </div>
             </Section>
-        </main>
         
+        </>
     )
 }
 
