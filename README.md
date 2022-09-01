@@ -12,7 +12,7 @@
 |/login                  | POST              |
 |/apresentation          | PUT & GET         |
 |/services               | GET & POST        |
-|/servicos/:id           | DELETE & PUT      |
+|/services/:id           | DELETE & PUT      |
 |/contacts               | POST & GET        |
 |/contacts/:id           | PUT, DELETE       |
 
