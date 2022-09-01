@@ -27,6 +27,7 @@ module.exports = {
     'react/function-component-definition': "off",
      'arrow-body-style': "off",
      "treatUndefinedAsUnspecified": "off",
-     "consistent-return": "off"
-  },
+     "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off"
+    },
 };
