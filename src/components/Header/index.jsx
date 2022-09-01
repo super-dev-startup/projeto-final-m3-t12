@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 import logo from "../../assets/Vector.png";
 import HeaderDiv from "./styles";
-
-// const navigate = useNavigate();
 
 const Header = () => {
   return (
