@@ -32,10 +32,10 @@ function ApresentationPage() {
             <article>
                 <StyledText>
                     <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    {user.data.subtitle}
                     </h2>
                     <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    {user.data.body}
                     </p>
                 </StyledText>
                 <StyledWrapperInfo>
@@ -46,7 +46,7 @@ function ApresentationPage() {
                     </div>
                     <div className="Info">
                         <p>New York</p>
-                        <p>user.data.experience</p>
+                        <p>{user.data.experience}</p>
                         <p>27 june 1992</p>
                     </div>
                 </StyledWrapperInfo>
@@ -54,7 +54,7 @@ function ApresentationPage() {
             </Main>
             <Section>
                 <div className="StledContainer">
-                    <h1>7+</h1>
+                    <h1>{user.data.experience}</h1>
                     <p>YEARS OF EXPERIENCE</p>
                 </div>
                 <div className="StledContainerProject">

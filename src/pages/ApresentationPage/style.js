@@ -49,9 +49,10 @@ export const StyledText = styled.div`
 `;
 
 export const StyledWrapperInfo = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
+ 
 
   .TitleInfo {
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
     display: flex;
     flex-direction: row;
     color: #311768;
@@ -61,6 +62,8 @@ export const StyledWrapperInfo = styled.div`
   }
 
   .Info {
+
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
     display: flex;
     flex-direction: row;
     justify-content: space-around;
