@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom";
+import SectionApresentation from "../../components/HomePageComp/SectionApresentation";
+
 
 function HomePage() {
   return (
-    <>
-      <h2>Home Page</h2>
 
-      <Link to="/login">
-        <button type="button">Login</button>
-      </Link>
-    </>
+    <SectionApresentation/>
+   
+
   );
 }
 
