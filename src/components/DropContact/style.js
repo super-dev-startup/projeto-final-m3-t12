@@ -19,8 +19,11 @@ export const DropDownContact = styled.div`
 
        a{
         color: #000;
+        font-size: 20px;
         text-align: center;
         padding: 5px;
+        width: 12px;
+        height: 20px;
        }
     }
     }
@@ -30,7 +33,7 @@ export const DropDownContact = styled.div`
     opacity: 1;
     visibility: visible;
     transform: translateY(10px);
-    transform: translateX(-50px);
+    transform: translateX(-20px);
 
    
     transition: 1.0s ease;

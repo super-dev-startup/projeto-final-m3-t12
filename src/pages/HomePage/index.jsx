@@ -1,13 +1,7 @@
-import SectionApresentation from "../../components/HomePageComp/SectionApresentation";
-
+import SectionApresentation from "../../components/HomePage";
 
 function HomePage() {
-  return (
-
-    <SectionApresentation/>
-   
-
-  );
+  return <SectionApresentation />;
 }
 
 export default HomePage;
