@@ -1,15 +1,7 @@
-import { Link } from "react-router-dom";
+import SectionApresentation from "../../components/HomePage";
 
 function HomePage() {
-  return (
-    <>
-      <h2>Home Page</h2>
-
-      <Link to="/login">
-        <button type="button">Login</button>
-      </Link>
-    </>
-  );
+  return <SectionApresentation />;
 }
 
 export default HomePage;
