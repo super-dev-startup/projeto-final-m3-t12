@@ -28,6 +28,7 @@ module.exports = {
      'arrow-body-style': "off",
      "treatUndefinedAsUnspecified": "off",
      "consistent-return": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    'react/jsx-props-no-spreading': "off",
     },
 };

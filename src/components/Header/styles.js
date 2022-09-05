@@ -1,4 +1,6 @@
-import styled from "styled-components";
+/* eslint-disable import/no-unresolved */
+
+import styled from "styled-components"
 
 const HeaderDiv = styled.div`
     display: flex;
