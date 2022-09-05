@@ -13,7 +13,7 @@ export const HomeSection = styled.main`
 
     .DropDown{
     position: absolute;
-    right: 10px;
+    right: 20px;
     bottom: 150px;
     }
 
