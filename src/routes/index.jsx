@@ -1,5 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import ApresentationPage from "../pages/ApresentationPage";
+
 import Layout from "../components/Layout";
+
 import AdminPage from "../pages/AdminPage";
 import HomePage from "../pages/HomePage";
 import ModalLogin from "../pages/ModalPages/ModalLogin";
@@ -10,6 +13,7 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/apresentation" element={<ApresentationPage />} />
         <Route path="login" element={<ModalLogin />} />
         <Route
           path="admin"
@@ -25,4 +29,3 @@ const Router = () => {
 };
 
 export default Router;
-

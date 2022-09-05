@@ -13,7 +13,7 @@ const RouteProvider = ({ children }) => {
 
   useEffect(() => {
     const LoadUser = async () => {
-      const token = localStorage.getItem("accessToken");
+    const token = localStorage.getItem("accessToken");
 
       if (token) {
         try {

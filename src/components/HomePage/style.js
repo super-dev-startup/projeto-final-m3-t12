@@ -81,10 +81,16 @@ flex-direction: column;
     flex-direction: row;
 
     .btnWhite{
+        display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+        text-decoration:none;
         width: 100px;
 
         background-color: #fff;
-        color: #000
+        color: #000;
+        
 
         border: solid 0.5px;
     }
