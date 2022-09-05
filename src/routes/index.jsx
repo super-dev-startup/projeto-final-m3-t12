@@ -11,10 +11,9 @@ import PrivateRoutes from "./privateRoutes";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/apresentation" element={<ApresentationPage />} />
-
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/apresentation" element={<ApresentationPage />} />
         <Route path="login" element={<ModalLogin />} />
         <Route
           path="admin"
