@@ -1,7 +1,4 @@
-/* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
-
-// import imgAdmin from '../../../assets/adminImage.png'
 
 export const LoginPage = styled.div`
 width: 100%;
