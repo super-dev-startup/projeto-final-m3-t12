@@ -4,7 +4,7 @@ import ApresentationPage from "../pages/ApresentationPage";
 import Layout from "../components/Layout";
 
 import AdminPage from "../pages/AdminPage";
-import HomePage from "../pages/HomePage";
+import HomePage from "../components/HomePage";
 import ModalLogin from "../pages/ModalPages/ModalLogin";
 import PrivateRoutes from "./privateRoutes";
 import Contacts from "../components/Contacts";
@@ -15,10 +15,10 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<ModalLogin />} />
+        <Route path="login" element={<ModalLogin />} />
         <Route path="apresentation" element={<ApresentationPage />} />
         <Route path="login" element={<ModalLogin />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="contacts" element={<Contacts />} />
         <Route path="services" element={<Services />} />
         <Route
           path="admin"

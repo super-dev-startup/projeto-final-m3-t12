@@ -1,22 +1,13 @@
-/* eslint-disable import/order */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/jsx-curly-brace-presence */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/self-closing-comp */
-/* import { useState, useRef, useEffect } from "react";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useState, useRef, useEffect } from "react";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { DropDownContact } from "./style";
 
-import { FaFacebookF, FaInstagram, FaTwitter  } from 'react-icons/fa'
-
-
-import contact from '../../assets/contact.png'
-// import face from '../../assets/face.png'
-// import twitter from '../../assets/twitter.png'
-// import insta from '../../assets/insta.png'
+import contact from "../../assets/contact.png";
 
 const DropContact = () => {
   const [open, setOpen] = useState(false);
@@ -41,24 +32,21 @@ const DropContact = () => {
     <DropDownContact>
       <div className="App">
         <div className="menu-container" ref={menuRef}>
-          
-
           <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
-        
             <ul className="dropDownIcons">
-              <DropdownItem icon={<FaFacebookF/>} />
-              <DropdownItem icon={<FaInstagram/>} />
-              <DropdownItem icon={<FaTwitter/>} />
+              <DropdownItem icon={<FaFacebookF />} />
+              <DropdownItem icon={<FaInstagram />} />
+              <DropdownItem icon={<FaTwitter />} />
             </ul>
-                  </div>
-                  
-                  <div
+          </div>
+
+          <div
             className="menu-trigger"
             onClick={() => {
               setOpen(!open);
             }}
           >
-            <img src={contact}></img>
+            <img src={contact} />
           </div>
         </div>
       </div>
@@ -69,11 +57,9 @@ const DropContact = () => {
 function DropdownItem(props) {
   return (
     <li className="dropdownItem">
-          <a href="#"> 
-      {props.icon}
-      </a>
+      <a href="#">{props.icon}</a>
     </li>
   );
 }
 
-export default DropContact; */
+export default DropContact;

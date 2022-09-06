@@ -1,11 +1,10 @@
-/* eslint-disable react/button-has-type */
 import { Link } from "react-router-dom";
 import moonSamll from "../../assets/moonSmall.png";
 import homeImage from "../../assets/homeImage.png";
 import { HomeSection, SectionInfo } from "./style";
 import DropContact from "../DropContact";
 
-const SectionApresentation = () => {
+const HomePage = () => {
   return (
     <HomeSection>
       <SectionInfo>
@@ -32,11 +31,8 @@ const SectionApresentation = () => {
         </div>
 
         <div className="HomeButton">
-          
-            <Link to="/contacts" className="btnWhite">
-  
-              Let´s talk
-
+          <Link to="/contacts" className="btnWhite">
+            Let´s talk
           </Link>
           <button className="btnBlack" type="button">
             Got a project?
@@ -55,4 +51,4 @@ const SectionApresentation = () => {
   );
 };
 
-export default SectionApresentation;
+export default HomePage;
