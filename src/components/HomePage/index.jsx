@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import { Link } from "react-router-dom";
 import moonSamll from "../../assets/moonSmall.png";
 import homeImage from "../../assets/homeImage.png";
@@ -31,8 +32,11 @@ const SectionApresentation = () => {
         </div>
 
         <div className="HomeButton">
-          <Link to="/contacts" className="btnWhite">
-            Let´s talk
+          
+            <Link to="/contacts" className="btnWhite">
+  
+              Let´s talk
+
           </Link>
           <button className="btnBlack" type="button">
             Got a project?

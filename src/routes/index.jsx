@@ -15,9 +15,10 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<ModalLogin />} />
         <Route path="apresentation" element={<ApresentationPage />} />
         <Route path="login" element={<ModalLogin />} />
-        <Route path="contacts" element={<Contacts />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="services" element={<Services />} />
         <Route
           path="admin"

@@ -45,7 +45,7 @@ const DropContact = () => {
 
           <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
         
-            <ul>
+            <ul className="dropDownIcons">
               <DropdownItem icon={<FaFacebookF/>} />
               <DropdownItem icon={<FaInstagram/>} />
               <DropdownItem icon={<FaTwitter/>} />

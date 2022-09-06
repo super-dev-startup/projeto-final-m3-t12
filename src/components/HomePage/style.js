@@ -6,15 +6,14 @@ export const HomeSection = styled.main`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    margin-top: 70px;
-    
 
     .DropDown{
     position: absolute;
-    right: 10px;
-    bottom: 150px;
+    right: 30px;
+    bottom: 110px;
     }
 
     @media (max-width: 768px){
@@ -82,9 +81,9 @@ flex-direction: column;
 
     .btnWhite{
         display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
         text-decoration:none;
         width: 100px;
 
@@ -104,6 +103,7 @@ flex-direction: column;
 
         border: solid 0.5px;
     }
+
 }
 
 @media (max-width: 768px){
