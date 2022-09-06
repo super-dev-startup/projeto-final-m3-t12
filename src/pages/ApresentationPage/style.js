@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Main = styled.main`
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 5px;
 
   @media only screen and (max-width: 800px) {
     display: flex;
@@ -14,7 +14,8 @@ export const Main = styled.main`
   }
 `
 export const StyledIntro = styled.div`
-    width: 300px;
+    width: 320px;
+    margin-bottom: 0;
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
   
@@ -164,78 +165,100 @@ margin-bottom: 60px;
 
 export const Section = styled.section`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
 
+  width: 300px;
+  margin: 10px;
   .StledContainer {
-    border: solid black 2px;
-    text-align: center;
-    padding: 10px;
+  border: solid black 2px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  width: 220px;
+
+  width: 83px;
+  padding: 5px; 
+  h1 {
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
+    font-size: 25px;
+    margin: 0;
+    margin-top: 10px;
     font-family: "Inter", sans-serif;
-    margin-bottom: 30px;
-    width: 230px;
-
-    h1 {
-      font-size: 50px;
-      margin: 0;
-      margin-top: 10px;
-      
-    }
-
   }
-
-  .StledContainerProject {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: "Inter", sans-serif;
-    margin-bottom: 30px;
-    width: 100px;
-
-    h1 {
-      font-size: 50px;
-      margin: 0;
-      margin-top: 10px;
-    }
-
-    p{
-      font-size: 15px;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    width: 300px;
-    margin: 10px;
-    .StledContainer {
-    width: 83px;
-    padding: 5px;
-  
-    
-      h1 {
-        font-size: 25px;
-      }
-
-      p{
-        font-size: 10px;
-      }
-   }
-  }
-
-  .StledContainerProject {
-    padding: 5px;
-    width: 83px;
-    h1 {
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
-      font-size: 25px;
-      margin: 0;
-      margin-top: 10px;
-      font-family: "Inter", sans-serif;
-    }
 
     p{
       font-size: 10px;
     }
+ }
+ 
+}
+
+.StledContainerProject {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  width: 220px;
+  padding: 5px;
+  width: 83px;
+  h1 {
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
+    font-size: 25px;
+    margin: 0;
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
   }
+
+  p{
+    font-size: 10px;
+  }
+}
+ 
+
+  @media only screen and (min-width: 800px) {
+    width: 100%;
+  
+    .StledContainerProject {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-family: "Inter", sans-serif;
+      margin-bottom: 30px;
+      width: 220px;
+    
+      h1{
+        font-size: 50px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+    
+    .StledContainer {
+      border: solid black 2px;
+      text-align: center;
+      padding: 10px;
+      font-family: "Inter", sans-serif;
+      margin-bottom: 30px;
+      width: 220px;
+  
+      h1 {
+        font-size: 50px;
+        margin: 0;
+        margin-top: 10px;
+        
+      }
+      p{
+        font-size: 15px;
+      }
+  
+    }
+  
 `;
