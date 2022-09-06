@@ -7,7 +7,7 @@ export const HomeSection = styled.main`
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-top: 70px;
     
 
