@@ -1,7 +1,10 @@
 import React from "react";
+import SpanDiv from "./styles";
 
 const Footer = () => {
-  return <span>Copyrigth 2022 direitos reservados a SuperDevs</span>;
+  return (
+    <SpanDiv>Copyrigth setembro 2022 direitos reservados a SuperDevs</SpanDiv>
+  );
 };
 
 export default Footer;
