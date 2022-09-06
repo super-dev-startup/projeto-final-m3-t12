@@ -8,7 +8,13 @@ export const HomeSection = styled.main`
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: 100%;
+    margin-top: 70px;
+    
+>>>>>>> 9a94d1884d08166a5730750583a2d6633952c7b5
 
     .DropDown{
     position: absolute;
