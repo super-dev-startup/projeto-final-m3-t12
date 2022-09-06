@@ -42,6 +42,23 @@ const HeaderDiv = styled.div`
             cursor: pointer;
         }
     }
+
+    @media (max-width: 569px) {
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 4px;
+
+        & {
+            img {
+                margin: 5px 0;
+            }
+
+            ul {
+                margin: 0;
+            }
+        }
+    }
     
 `
 export default HeaderDiv

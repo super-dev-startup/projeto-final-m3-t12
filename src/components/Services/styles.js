@@ -34,6 +34,7 @@ export const List = styled.ul`
 
   margin: 50px auto;
   max-width: 1300px;
+  padding: 0;
 
   li {
     display: flex;

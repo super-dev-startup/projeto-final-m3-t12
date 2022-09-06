@@ -13,13 +13,11 @@ const RouteProvider = ({ children }) => {
 
   useEffect(() => {
     const LoadUser = async () => {
-    const token = localStorage.getItem("accessToken");
+      const token = localStorage.getItem("accessToken");
 
       if (token) {
         try {
-          api.defaults.Authorization = `Bearer ${token}`;
-          const { data } = await api.get(`/users/admin`);
-          setUser(data);
+          api.defaults.headers.common.Authorization = `Bearer ${token}`;
         } catch (error) {
           return error;
         }
