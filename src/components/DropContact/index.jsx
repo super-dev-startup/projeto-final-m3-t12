@@ -7,7 +7,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/self-closing-comp */
-import { useState, useRef, useEffect } from "react";
+/* import { useState, useRef, useEffect } from "react";
 import { DropDownContact } from "./style";
 
 import { FaFacebookF, FaInstagram, FaTwitter  } from 'react-icons/fa'
@@ -76,4 +76,4 @@ function DropdownItem(props) {
   );
 }
 
-export default DropContact;
+export default DropContact; */
