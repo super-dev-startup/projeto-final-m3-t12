@@ -13,9 +13,17 @@ export const DropDownContact = styled.div`
     gap: 20px;
 
     li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
        a{
         color: #000;
+        font-size: 20px;
         text-align: center;
+        padding: 5px;
+        width: 12px;
+        height: 20px;
        }
     }
     }
@@ -25,10 +33,10 @@ export const DropDownContact = styled.div`
     opacity: 1;
     visibility: visible;
     transform: translateY(10px);
-    transform: translateX(-50px);
+    transform: translateX(-20px);
 
    
-    transition: 1.2s ease;
+    transition: 1.0s ease;
   }
   
   .dropdown-menu.inactive{
@@ -39,6 +47,9 @@ export const DropDownContact = styled.div`
   }
 
   .menu-trigger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     img{
         padding: 10px;
