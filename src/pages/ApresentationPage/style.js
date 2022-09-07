@@ -5,6 +5,7 @@ export const Main = styled.main`
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  height: 65vh;
 
   @media only screen and (max-width: 800px) {
     display: flex;
