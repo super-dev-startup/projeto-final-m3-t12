@@ -1,5 +1,7 @@
-/* eslint-disable import/prefer-default-export */
+
+
 import * as yup from 'yup';
+
 
 export const contactEmail = yup.object({
   firstName: yup.string('Apenas texto!').required('Campo obrigatório'),
