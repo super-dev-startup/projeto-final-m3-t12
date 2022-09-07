@@ -1,22 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../../assets/Vector.png";
-import HeaderDiv from "./styles";
+import React from 'react';
+// import { Link } from 'react-router-dom';
+// import logo from '../../assets/Vector.png';
+import HeaderDiv, { StyledLink } from './styles';
 
 const Header = () => {
   return (
     <HeaderDiv>
-      <img src={logo} alt="" />
+      {/* <figure>
+        <img src={logo} alt="" />
+      </figure> */}
+      <h1>TYLER FOTOGRAPHER</h1>
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <StyledLink to="/">Home</StyledLink>
           </li>
           <li>
-            <Link to="/apresentation">About</Link>
+            <StyledLink to="/apresentation">About</StyledLink>
           </li>
           <li>
-            <Link to="/services">Works</Link>
+            <StyledLink to="/services">Works</StyledLink>
           </li>
         </ul>
       </nav>
