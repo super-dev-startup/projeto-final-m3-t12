@@ -13,6 +13,7 @@ function ModalLogin() {
   const { onSubmitLogin } = useContext(RouteContext);
   return (
     <LoginPage imgUrl="../../../assets/adminImage.png">
+      
       <img src={image} alt="" />
 
       <FormLogin onSubmit={handleSubmit(onSubmitLogin)}>

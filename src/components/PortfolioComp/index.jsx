@@ -5,6 +5,8 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
+import Carousel from 'react-elastic-carousel'
+
 import api from "../../api/api";
 import { InfoItem, Item, Items, ItemsWraper, Portfolio } from "./styles";
 
@@ -25,12 +27,14 @@ const PortfolioComp = () => {
   return (
     <Portfolio>
       <ItemsWraper>
-       <Items>
+        <Items>
+          <Carousel>
       {images.map((item) => (
         <Item>
           <img src={item} alt="" />
         </Item>
       ))}
+          </Carousel>
         </Items>
       </ItemsWraper>
       

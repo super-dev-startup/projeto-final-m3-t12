@@ -29,9 +29,15 @@ const DropContact = () => {
         <div className="menu-container" ref={menuRef}>
           <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
             <ul className="dropDownIcons">
-              <DropdownItem icon={<FaFacebookF />} />
-              <DropdownItem icon={<FaInstagram />} />
-              <DropdownItem icon={<FaTwitter />} />
+              <DropdownItem
+                href="https://www.facebook.com/"
+                icon={<FaFacebookF />}
+              />
+              <DropdownItem
+                href="https://www.instagram.com/"
+                icon={<FaInstagram />}
+              />
+              <DropdownItem href="https://twitter.com/" icon={<FaTwitter />} />
             </ul>
           </div>
 
@@ -52,7 +58,7 @@ const DropContact = () => {
 function DropdownItem(props) {
   return (
     <li className="dropdownItem">
-      <a href="#">{props.icon}</a>
+      <a href={props.href} target="_blank" rel="noreferrer">{props.icon}</a>
     </li>
   );
 }

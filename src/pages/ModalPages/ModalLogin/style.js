@@ -4,6 +4,8 @@ export const LoginPage = styled.div`
 width: 100%;
 height: 100%;
 
+padding: 69px 0;
+
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -20,11 +22,10 @@ align-items: center;
 
 export const FormLogin = styled.form`
 min-width: 40%;
-height: 60vh;
+height: 50vh;
 
 padding: 30px;
 
-margin-top: 30px;
 
 background: #fff;
 display: flex;

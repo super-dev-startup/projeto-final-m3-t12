@@ -7,7 +7,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 
-height: 100%;
+height: 100vh;
 
 @media (max-width: 769px){
   heigth: 70vh;
@@ -21,7 +21,11 @@ height: 100%;
 `
 
 export const ItemsWraper = styled.div`
-width: 70vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 100%;
 `
 
 export const Items = styled.div`
@@ -33,7 +37,6 @@ overflow-x: hidden;
 scroll-snap-type: x mandatory;
 
 width: 80%;
-margin-left: 75px;
 
 @media (max-width: 769px){
   margin-left: 50px;
@@ -49,13 +52,11 @@ display: flex;
 justify-content: center;
 
 width: 100%; 
-scroll-snap-align: start;
 
   img{
 
-    width: 100%;
+    width: 80%;
   
-
     object-fit: cover;
   }
 `;
