@@ -30,7 +30,7 @@ const RouteProvider = ({ children }) => {
     };
     LoadUser();
   }, [user]);
-
+  
   const onSubmitLogin = (data) => {
     api
       .post("/login", data)
@@ -48,8 +48,10 @@ const RouteProvider = ({ children }) => {
     window.location.reload();
   };
 
+
+
   return (
-    <RouteContext.Provider value={{ user, loading, onSubmitLogin, Logout }}>
+    <RouteContext.Provider value={{ user, loading, onSubmitLogin, Logout}}>
       {children}
     </RouteContext.Provider>
   );

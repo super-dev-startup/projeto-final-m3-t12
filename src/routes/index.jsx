@@ -9,6 +9,7 @@ import ModalLogin from "../pages/ModalPages/ModalLogin";
 import PrivateRoutes from "./privateRoutes";
 import Contacts from "../components/Contacts";
 import Services from "../components/Services";
+import PortfolioComp from "../components/PortfolioComp";
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
         <Route path="login" element={<ModalLogin />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="services" element={<Services />} />
+        <Route path="services/:id" element= {<PortfolioComp/>}/>
         <Route
           path="admin"
           element={
