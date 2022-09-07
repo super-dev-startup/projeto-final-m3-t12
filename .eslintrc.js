@@ -31,5 +31,11 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     'react/jsx-props-no-spreading': "off",
     'import/prefer-default-export': "off",
+    'react/destructuring-assignment': "off",
+    'jsx-a11y/anchor-is-valid': "off",
+    'jsx-a11y/alt-text': "off",
+    'jsx-a11y/no-static-element-interactions': "off",
+    'jsx-a11y/click-events-have-key-events': "off",
+
     },
 };
