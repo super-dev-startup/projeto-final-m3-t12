@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const LoginPage = styled.div`
 width: 100%;
-heigth: 100vh;
+height: 100%;
 
-margin: 0 20px;
+padding: 69px 0;
 
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 
 @media (max-width: 768px){
@@ -21,12 +21,11 @@ align-items: center;
 `
 
 export const FormLogin = styled.form`
-min-width: 50%;
-height: 75vh;
+min-width: 40%;
+height: 50vh;
 
 padding: 30px;
 
-margin-top: 30px;
 
 background: #fff;
 display: flex;
@@ -34,8 +33,8 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
--webkit-box-shadow: 12px 12px 0px 0px #000000; 
-box-shadow: 5px 5px 10px 0px #000000;
+
+box-shadow: 5px 5px 10px 0px #a1a1a1;
 
 h6{
     font-size: 18px;

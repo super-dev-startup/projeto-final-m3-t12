@@ -21,7 +21,11 @@ height: 100vh;
 `
 
 export const ItemsWraper = styled.div`
-width: 70vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 100%;
 `
 
 export const Items = styled.div`
@@ -32,8 +36,7 @@ flex-direction: row;
 overflow-x: hidden;
 scroll-snap-type: x mandatory;
 
-width: 85%;
-margin-left: 75px;
+width: 80%;
 
 @media (max-width: 769px){
   margin-left: 50px;
@@ -45,15 +48,15 @@ margin-left: 75px;
 export const Item = styled.div`
 flex: none;
 
-width: 100%;
-height: 100%; 
-scroll-snap-align: start;
+display: flex; 
+justify-content: center;
+
+width: 100%; 
 
   img{
 
-    width: 100%;
-    heigth: 100%;
-
+    width: 80%;
+  
     object-fit: cover;
   }
 `;
