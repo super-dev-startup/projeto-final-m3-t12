@@ -5,6 +5,8 @@ export const HomeSection = styled.main`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 86vh;
+  
 
   position: relative;
 

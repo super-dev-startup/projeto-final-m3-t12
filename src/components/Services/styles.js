@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.section`
   @import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600&display=swap');
-
+  height: 82vh;
   * {
     margin: 0;
     padding: 0;
@@ -34,6 +34,7 @@ export const List = styled.ul`
 
   margin: 50px auto;
   max-width: 1300px;
+  padding: 0;
 
   li {
     display: flex;

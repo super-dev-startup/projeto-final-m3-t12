@@ -1,8 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState, useRef, useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { DropDownContact } from "./style";

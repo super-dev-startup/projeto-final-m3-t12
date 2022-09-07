@@ -3,3 +3,8 @@
 button {
   cursor: pointer;
 }
+#root{
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+}
