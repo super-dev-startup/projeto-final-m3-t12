@@ -15,16 +15,12 @@ export const Main = styled.main`
 `
 export const StyledIntro = styled.div`
     width: 320px;
-    margin-bottom: 0;
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-  
+    margin-bottom: 0;  
     .name{
         display: flex;
         flex-direction: row;
 
         h3{
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap');
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-size: 22px;
@@ -45,7 +41,6 @@ export const StyledIntro = styled.div`
     }
 
     h1{
-       @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
         margin-top: 0;
         font-size: 50px;
         font-family: 'Alata', sans-serif;
@@ -66,7 +61,6 @@ export const StyledIntro = styled.div`
 `;
 
 export const StyledText = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
   width: 400px;
   margin-left: 50px;
   
@@ -101,7 +95,6 @@ export const StyledText = styled.div`
 `;
 
 export const StyledWrapperInfo = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 margin-left: 55px;
 margin-bottom: 60px;
 
@@ -114,13 +107,13 @@ margin-bottom: 60px;
         
         font-family: 'Orbitron', sans-serif;
         font-size: 20px;
+        font-weight: 500;
         color: #311768;
     }
     
   }
 
   .Info {
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -164,8 +157,6 @@ margin-bottom: 60px;
 `;
 
 export const Section = styled.section`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -183,7 +174,6 @@ export const Section = styled.section`
   width: 83px;
   padding: 5px; 
   h1 {
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
     font-size: 25px;
     margin: 0;
     margin-top: 10px;
@@ -208,7 +198,7 @@ export const Section = styled.section`
   padding: 5px;
   width: 83px;
   h1 {
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Orbitron:wght@400;500&display=swap");
+   
     font-size: 25px;
     margin: 0;
     margin-top: 10px;
