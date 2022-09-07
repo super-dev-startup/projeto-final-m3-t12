@@ -1,3 +1,5 @@
-button{
-    cursor:pointer;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600&family=Jura:wght@700&family=Orbitron&display=swap');
+
+button {
+  cursor: pointer;
 }
