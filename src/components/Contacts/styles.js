@@ -10,6 +10,10 @@ export const Container = styled.section`
     box-sizing: border-box;
   }
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   text-align: center;
   padding: 20px 15px;
 
@@ -20,6 +24,12 @@ export const Container = styled.section`
   @media (min-width: 768px) {
     h1 {
       font: 400 50px/44px 'Alata';
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 60px;
     }
   }
 `;
@@ -42,6 +52,12 @@ export const Form = styled.form`
     width: 100%;
     max-width: 500px;
     font: 300 16px/16px 'Inter';
+
+    @media (min-width: 1400px) {
+      max-width: 700px;
+      height: 60px;
+      font-size: 20px;
+    }
   }
 
   textarea {
@@ -72,6 +88,13 @@ export const Form = styled.form`
     button {
       width: 200px;
       padding: 12px;
+    }
+  }
+  @media (min-width: 1400px) {
+    button {
+      width: 300px;
+      padding: 18px;
+      font-size: 22px;
     }
   }
 `;

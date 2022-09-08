@@ -5,8 +5,7 @@ export const HomeSection = styled.main`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 86vh;
-  
+  width: 100wh;
 
   position: relative;
 
@@ -28,7 +27,7 @@ export const HomeSection = styled.main`
   }
 
   figure {
-    width: 50vh;
+    width: 40%;
     img {
       width: 100%;
     }
@@ -52,19 +51,36 @@ export const SectionInfo = styled.section`
   display: flex;
   flex-direction: column;
 
+  /* background-color: red; */
+
   .HomeInfo {
-    .title {
+    @media (min-width: 1400px) {
       h2 {
         font-size: 50px;
       }
+
+      h3 {
+        font-size: 30px;
+      }
     }
 
-    .info {
-      line-height: 2px;
+    @media (min-width: 1800px) {
+      h2 {
+        font-size: 55px;
+      }
 
-      h4 {
-        font-size: 30px;
-        font-weight: 400;
+      h3 {
+        font-size: 35px;
+      }
+    }
+
+    @media (min-width: 2200px) {
+      h2 {
+        font-size: 60px;
+      }
+
+      h3 {
+        font-size: 40px;
       }
     }
 
@@ -97,7 +113,37 @@ export const SectionInfo = styled.section`
       }
 
       img {
-        height: 24px;
+        height: 20px;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      h6 {
+        font-size: 18px;
+      }
+
+      img {
+        height: 34px;
+      }
+    }
+
+    @media (min-width: 1800px) {
+      h6 {
+        font-size: 20px;
+      }
+
+      img {
+        height: 36px;
+      }
+    }
+
+    @media (min-width: 2200px) {
+      h6 {
+        font-size: 24px;
+      }
+
+      img {
+        height: 40px;
       }
     }
   }
@@ -148,6 +194,33 @@ export const SectionInfo = styled.section`
       width: 80px;
       height: 150px;
       margin-left: 40px;
+    }
+
+    @media (min-width: 1400px) {
+      width: 400px;
+      .btnWhite,
+      .btnBlack {
+        font: 500 20px/18px 'Inter';
+        padding: 14px 0px;
+      }
+    }
+
+    @media (min-width: 1800px) {
+      width: 450px;
+      .btnWhite,
+      .btnBlack {
+        font: 500 24px/20px 'Inter';
+        padding: 16px 0px;
+      }
+    }
+
+    @media (min-width: 2200px) {
+      width: 500px;
+      .btnWhite,
+      .btnBlack {
+        font: 500 28px/22px 'Inter';
+        padding: 18px 0px;
+      }
     }
   }
 

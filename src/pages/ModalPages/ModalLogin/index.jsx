@@ -1,47 +1,47 @@
-import { useContext } from "react";
-import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
-import { HiUser } from "react-icons/hi";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { RouteContext } from "../../../contexts/contextRoutes";
-import { FormLogin, LoginPage } from "./style";
-import image from "../../../assets/admin-img.png";
+import { useContext } from 'react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+// import { HiUser } from 'react-icons/hi';
+// import { RiLockPasswordFill } from 'react-icons/ri';
+import loginResolver from '../../../validators/login';
+import { RouteContext } from '../../../contexts/contextRoutes';
+import { FormLogin, LoginPage, ErrorMsg } from './style';
+// import image from '../../../assets/admin-img.png';
 
 function ModalLogin() {
-  const { register, handleSubmit } = useForm({});
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(loginResolver),
+  });
 
   const { onSubmitLogin } = useContext(RouteContext);
   return (
-    <LoginPage imgUrl="../../../assets/adminImage.png">
-      
-      <img src={image} alt="" />
-
+    <LoginPage>
       <FormLogin onSubmit={handleSubmit(onSubmitLogin)}>
-        <h6>login as admin user</h6>
+        <h1>Login</h1>
 
         <div>
           <input
             type="email"
             placeholder="type your e-mail"
-            {...register("email")}
+            {...register('email')}
           />
-          <HiUser />
-        </div>
+          <ErrorMsg>{errors.email?.message}</ErrorMsg>
 
-        <div>
           <input
             type="password"
             placeholder="type your password"
-            {...register("password")}
+            {...register('password')}
           />
-          <RiLockPasswordFill />
+          <ErrorMsg>{errors.password?.message}</ErrorMsg>
         </div>
 
         <button type="submit" className="btnLogin">
           login
         </button>
-
-        <Link to="/">back to Home</Link>
       </FormLogin>
     </LoginPage>
   );

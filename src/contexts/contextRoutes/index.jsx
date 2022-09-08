@@ -1,6 +1,6 @@
-import React, { createContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import api from "../../api/api";
+import React, { createContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import api from '../../api/api';
 
 export const RouteContext = createContext({});
 
@@ -9,11 +9,13 @@ const RouteProvider = ({ children }) => {
 
   const [loading, setLoading] = useState(true);
 
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
     const LoadUser = async () => {
-      const token = localStorage.getItem("accessToken");
+      const token = localStorage.getItem('accessToken');
 
       if (token) {
         try {
@@ -28,13 +30,13 @@ const RouteProvider = ({ children }) => {
     };
     LoadUser();
   }, [user]);
-  
+
   const onSubmitLogin = (data) => {
     api
-      .post("/login", data)
+      .post('/login', data)
       .then((response) => {
         setUser(response.data.user);
-        localStorage.setItem("accessToken", response.data.accessToken);
+        localStorage.setItem('accessToken', response.data.accessToken);
         navigate(`/admin`, { replace: true });
       })
       .catch((response) => response);
@@ -46,10 +48,14 @@ const RouteProvider = ({ children }) => {
     window.location.reload();
   };
 
-
+  const handleModal = (boolean) => {
+    setIsOpenModal(boolean);
+  };
 
   return (
-    <RouteContext.Provider value={{ user, loading, onSubmitLogin, Logout}}>
+    <RouteContext.Provider
+      value={{ user, loading, onSubmitLogin, Logout, handleModal, isOpenModal }}
+    >
       {children}
     </RouteContext.Provider>
   );

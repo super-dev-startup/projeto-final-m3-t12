@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 
 export const DropDownContact = styled.div`
@@ -51,9 +50,25 @@ export const DropDownContact = styled.div`
     img {
       border-radius: 50%;
       box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background-color: #585858;
 
       height: 50px;
       width: 50px;
+
+      @media (min-width: 768px) {
+        height: 65px;
+        width: 65px;
+      }
+
+      @media (min-width: 1400px) {
+        height: 80px;
+        width: 80px;
+      }
+
+      @media (min-width: 1800px) {
+        height: 90px;
+        width: 90px;
+      }
     }
   }
 `;
