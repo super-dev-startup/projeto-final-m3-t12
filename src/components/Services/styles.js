@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.section`
-  @import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600&display=swap');
-  height: 82vh;
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   text-align: center;
   padding: 20px 15px;
@@ -22,6 +24,21 @@ export const Container = styled.section`
     h1 {
       font: 400 50px/44px 'Alata';
     }
+    height: 400px;
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font: 400 65px/44px 'Alata';
+    }
+    height: 550px;
+  }
+
+  @media (min-width: 1800px) {
+    h1 {
+      font: 400 75px/44px 'Alata';
+    }
+    height: 550px;
   }
 `;
 
@@ -32,7 +49,8 @@ export const List = styled.ul`
   align-items: center;
   justify-content: flex-start;
 
-  margin: 50px auto;
+  margin: 40px auto;
+  width: 100%;
   max-width: 1300px;
   padding: 0;
 
@@ -56,18 +74,26 @@ export const List = styled.ul`
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 80px;
-    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
 
     li {
       flex-direction: column;
 
       height: auto;
       max-width: 20%;
-      min-width: 190px;
+      min-width: 150px;
 
       /* box-shadow: none; */
     }
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1500px;
+  }
+
+  @media (min-width: 1800px) {
+    max-width: 1800px;
   }
 `;
 
@@ -86,7 +112,7 @@ export const Image = styled.figure`
 
   @media (min-width: 768px) {
     width: 100%;
-    height: 180px;
+    height: 120px;
 
     img {
       width: 100%;
@@ -96,6 +122,14 @@ export const Image = styled.figure`
       object-position: left;
     }
   }
+
+  @media (min-width: 1400px) {
+    height: 150px;
+  }
+
+  @media (min-width: 1800px) {
+    height: 200px;
+  }
 `;
 
 export const Info = styled.div`
@@ -103,7 +137,7 @@ export const Info = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 10px;
 
   text-align: left;
   padding: 2px 0;
@@ -135,6 +169,32 @@ export const Info = styled.div`
       font: 600 22px/22px 'Inter';
     }
   }
+
+  @media (min-width: 1400px) {
+    height: 130px;
+
+    span {
+      font: 500 22px/22px 'Inter';
+      padding: 4px 24px;
+    }
+
+    h2 {
+      font: 600 25px/25px 'Inter';
+    }
+  }
+
+  @media (min-width: 1800px) {
+    height: 150px;
+
+    span {
+      font: 500 26px/26px 'Inter';
+      padding: 4px 24px;
+    }
+
+    h2 {
+      font: 600 30px/30px 'Inter';
+    }
+  }
 `;
 
 export const SeeMore = styled(Link)`
@@ -144,5 +204,13 @@ export const SeeMore = styled(Link)`
 
   @media (min-width: 768px) {
     font: 500 20px/24px 'Inter';
+  }
+
+  @media (min-width: 1400px) {
+    font: 500 24px/28px 'Inter';
+  }
+
+  @media (min-width: 1800px) {
+    font: 500 25px/34px 'Inter';
   }
 `;

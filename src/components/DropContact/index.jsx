@@ -1,8 +1,8 @@
-import { useState, useRef, useEffect } from "react";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-import { DropDownContact } from "./style";
+import { useState, useRef, useEffect } from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { DropDownContact } from './style';
 
-import contact from "../../assets/contact.png";
+import contact from '../../assets/contact.svg';
 
 const DropContact = () => {
   const [open, setOpen] = useState(false);
@@ -16,10 +16,10 @@ const DropContact = () => {
       }
     };
 
-    document.addEventListener("mousedown", handler);
+    document.addEventListener('mousedown', handler);
 
     return () => {
-      document.removeEventListener("mousedown", handler);
+      document.removeEventListener('mousedown', handler);
     };
   });
 
@@ -27,11 +27,17 @@ const DropContact = () => {
     <DropDownContact>
       <div className="App">
         <div className="menu-container" ref={menuRef}>
-          <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
+          <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
             <ul className="dropDownIcons">
-              <DropdownItem icon={<FaFacebookF />} />
-              <DropdownItem icon={<FaInstagram />} />
-              <DropdownItem icon={<FaTwitter />} />
+              <DropdownItem
+                href="https://www.facebook.com/"
+                icon={<FaFacebookF />}
+              />
+              <DropdownItem
+                href="https://www.instagram.com/"
+                icon={<FaInstagram />}
+              />
+              <DropdownItem href="https://twitter.com/" icon={<FaTwitter />} />
             </ul>
           </div>
 
@@ -52,7 +58,9 @@ const DropContact = () => {
 function DropdownItem(props) {
   return (
     <li className="dropdownItem">
-      <a href="#">{props.icon}</a>
+      <a href={props.href} target="_blank" rel="noreferrer">
+        {props.icon}
+      </a>
     </li>
   );
 }

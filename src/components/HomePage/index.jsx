@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import moonSamll from '../../assets/moonSmall.png';
+import moonSamll from '../../assets/moonSmall.svg';
 import imageHome from '../../assets/imageHome.svg';
 import { HomeSection, SectionInfo } from './style';
 import DropContact from '../DropContact';
@@ -14,15 +14,15 @@ const HomePage = () => {
         </div>
 
         <div className="HomeCategory">
-          <h6>MERRIAGE</h6>
+          <h6>WEDDINGS</h6>
 
           <img src={moonSamll} alt="Small moon" />
 
-          <h6>PARTY</h6>
+          <h6>PARTIES</h6>
 
           <img src={moonSamll} alt="Small moon" />
 
-          <h6>PREGNANT</h6>
+          <h6>PREGNANCY</h6>
         </div>
 
         <div className="HomeButton">

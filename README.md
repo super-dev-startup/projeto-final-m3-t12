@@ -171,6 +171,8 @@ O objeto de retorno da requisão GET será:
 - Styled Components
 - React Router Dom v6
 - Axios
+- React elastic carousel
+- React Icons
 ## Ferramentas utilizadas
 - Jira
 - JSON Server / Auth
