@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const LayoutDiv = styled.div`
   box-sizing: border-box;
   height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
 
   border: 20px solid #c0c6eb;
 
