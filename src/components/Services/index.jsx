@@ -20,7 +20,7 @@ const Services = () => {
               <img src={item.portfolio[0]} alt="" />
             </Image>
             <Info>
-              <span>Merriage</span>
+              <span>Demo</span>
               <h2>{item.name}</h2>
               <SeeMore to={`/services/${item.id}`}> see More</SeeMore>
             </Info>

@@ -162,7 +162,7 @@ function AdminPage() {
                     <img src={item.portfolio[0]} alt="" />
                   </figure>
                   <div>
-                    <span>Merriage</span>
+                    <span>Demo</span>
                     <h2>{item.name}</h2>
                     <span
                       to={item.id}
