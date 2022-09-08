@@ -1,26 +1,47 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import loginResolver from "../../../validators/login";
 import { RouteContext } from "../../../contexts/contextRoutes";
+import { FormLogin, LoginPage, ErrorMsg } from "./style";
 
 function ModalLogin() {
-  const { register, handleSubmit } = useForm({});
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(loginResolver),
+  });
 
   const { onSubmitLogin } = useContext(RouteContext);
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmitLogin)}>
-        <input type="email" placeholder="Email" {...register("email")} />
-        <input type="password" placeholder="Senha" {...register("password")} />
+    <LoginPage>
+      <FormLogin onSubmit={handleSubmit(onSubmitLogin)}>
+        <h1>Login</h1>
 
-        <button type="submit">Fazer login</button>
-      </form>
+        <div>
+          <input
+            type="email"
+            placeholder="type your e-mail"
+            {...register("email")}
+          />
+          <ErrorMsg>{errors.email?.message}</ErrorMsg>
 
-      <Link to="/">
-        <button type="button">Voltar a Home</button>
-      </Link>
-    </>
+          <input
+            type="password"
+            placeholder="type your password"
+            {...register("password")}
+          />
+          <ErrorMsg>{errors.password?.message}</ErrorMsg>
+        </div>
+
+        <button type="submit" className="btnLogin">
+          login
+        </button>
+      </FormLogin>
+    </LoginPage>
   );
 }
 

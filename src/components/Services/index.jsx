@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 import { useEffect, useState } from 'react';
 import { Container, List, Info, Image, SeeMore } from './styles';
 import api from '../../api/api';
@@ -19,9 +20,9 @@ const Services = () => {
               <img src={item.portfolio[0]} alt="" />
             </Image>
             <Info>
-              <span>Merriage</span>
+              <span>Demo</span>
               <h2>{item.name}</h2>
-              <SeeMore to={item.id}>See more</SeeMore>
+              <SeeMore to={`/services/${item.id}`}> see More</SeeMore>
             </Info>
           </li>
         ))}
