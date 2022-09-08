@@ -1,14 +1,10 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
-// import logo from '../../assets/Vector.png';
-import HeaderDiv, { StyledLink } from './styles';
+import React from "react";
+
+import HeaderDiv, { StyledLink } from "./styles";
 
 const Header = () => {
   return (
     <HeaderDiv>
-      {/* <figure>
-        <img src={logo} alt="" />
-      </figure> */}
       <h1>TYLER FOTOGRAPHER</h1>
       <nav>
         <ul>

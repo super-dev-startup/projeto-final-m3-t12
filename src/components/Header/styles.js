@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unresolved */
+
 
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';

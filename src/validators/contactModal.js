@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
+
 
 import * as yup from 'yup';
 

@@ -1,12 +1,10 @@
-import { useContext } from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-// import { HiUser } from 'react-icons/hi';
-// import { RiLockPasswordFill } from 'react-icons/ri';
-import loginResolver from '../../../validators/login';
-import { RouteContext } from '../../../contexts/contextRoutes';
-import { FormLogin, LoginPage, ErrorMsg } from './style';
-// import image from '../../../assets/admin-img.png';
+import { useContext } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import loginResolver from "../../../validators/login";
+import { RouteContext } from "../../../contexts/contextRoutes";
+import { FormLogin, LoginPage, ErrorMsg } from "./style";
 
 function ModalLogin() {
   const {
@@ -27,14 +25,14 @@ function ModalLogin() {
           <input
             type="email"
             placeholder="type your e-mail"
-            {...register('email')}
+            {...register("email")}
           />
           <ErrorMsg>{errors.email?.message}</ErrorMsg>
 
           <input
             type="password"
             placeholder="type your password"
-            {...register('password')}
+            {...register("password")}
           />
           <ErrorMsg>{errors.password?.message}</ErrorMsg>
         </div>
