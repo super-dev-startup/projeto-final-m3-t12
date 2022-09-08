@@ -54,6 +54,24 @@ const HeaderDiv = styled.div`
       font: 400 24px/20px 'Inter';
     }
   }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font: 400 26px/22px 'Inter';
+    }
+  }
+
+  @media (min-width: 1800px) {
+    h1 {
+      font: 400 30px/26px 'Inter';
+    }
+  }
+
+  @media (min-width: 2200px) {
+    h1 {
+      font: 400 36px/30px 'Inter';
+    }
+  }
 `;
 export default HeaderDiv;
 
@@ -66,5 +84,17 @@ export const StyledLink = styled(Link)`
 
   @media (min-width: 768px) {
     font-size: 18px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 2200px) {
+    font-size: 26px;
   }
 `;
