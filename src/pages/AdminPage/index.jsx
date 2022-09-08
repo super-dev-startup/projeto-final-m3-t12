@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import api from "../../api/api";
+import ModalServiceAdmin from "../../components/ModalServiceAdmin/ModalServiceAdmin";
 import { Image, Info, List, SeeMore } from "../../components/Services/styles";
 import { RouteContext } from "../../contexts/contextRoutes";
 import DashboardDiv from "./styles";
@@ -51,99 +52,120 @@ function AdminPage() {
     );
   };
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [id, setId] = useState();
+  const [indexService, setIndex] = useState();
+
   useEffect(() => {
     setApresentationFunc();
   }, []);
 
   return (
-    <DashboardDiv>
-      <div className="infos">
-        <h2>Deshboard Admin</h2>
-        <button className="btnLogout" onClick={Logout}>
-          Sair
-        </button>
-      </div>
+    <>
+      {modalIsOpen === true && (
+        <ModalServiceAdmin
+          id={id}
+          service={services[indexService]}
+          setModalIsOpen={setModalIsOpen}
+        />
+      )}
+      <DashboardDiv>
+        <div className="infos">
+          <h2>Deshboard Admin</h2>
+          <button className="btnLogout" onClick={Logout}>
+            Sair
+          </button>
+        </div>
 
-      <h2>Edite suas informações</h2>
+        <h2>Edite suas informações</h2>
+        <form
+          onSubmit={handleSubmit(updateApresentation)}
+          className="form-apresentation"
+        >
+          <h3>Apresentação</h3>
+          <label htmlFor="title">
+            Título
+            <input type="text" id="title" {...register("title")} />
+          </label>
 
-      <form
-        onSubmit={handleSubmit(updateApresentation)}
-        className="form-apresentation"
-      >
-        <h3>Apresentação</h3>
-        <label htmlFor="title">
-          Título
-          <input type="text" id="title" {...register("title")} />
-        </label>
+          <label htmlFor="subtitle">
+            Subtítulo
+            <input type="text" id="subtitle" {...register("subtitle")} />
+          </label>
 
-        <label htmlFor="subtitle">
-          Subtítulo
-          <input type="text" id="subtitle" {...register("subtitle")} />
-        </label>
+          <label className="textarea" htmlFor="body">
+            Corpo da apresentação
+            <textarea rows="5" cols="73" id="body" {...register("body")} />
+          </label>
 
-        <label className="textarea" htmlFor="body">
-          Corpo da apresentação
-          <textarea rows="5" cols="73" id="body" {...register("body")} />
-        </label>
+          <label htmlFor="born-in">
+            Local
+            <input type="text" id="born-in" {...register("born-in")} />
+          </label>
 
-        <label htmlFor="born-in">
-          Local
-          <input type="text" id="born-in" {...register("born-in")} />
-        </label>
+          <label htmlFor="experience">
+            Experiência
+            <input type="text" id="experience" {...register("experience")} />
+          </label>
 
-        <label htmlFor="experience">
-          Experiência
-          <input type="text" id="experience" {...register("experience")} />
-        </label>
+          <label htmlFor="date-of-birth">
+            Nascimento
+            <input
+              type="text"
+              id="date-of-birth"
+              {...register("date-of-birth")}
+            />
+          </label>
 
-        <label htmlFor="date-of-birth">
-          Nascimento
-          <input
-            type="text"
-            id="date-of-birth"
-            {...register("date-of-birth")}
-          />
-        </label>
+          <label htmlFor="project-completed">
+            Projetos completos
+            <input
+              type="text"
+              id="project-completed"
+              {...register("project-completed")}
+            />
+          </label>
 
-        <label htmlFor="project-completed">
-          Projetos completos
-          <input
-            type="text"
-            id="project-completed"
-            {...register("project-completed")}
-          />
-        </label>
+          <label htmlFor="happy-cliente">
+            Clientes satisfeitos
+            <input
+              type="text"
+              id="happy-cliente"
+              {...register("happy-cliente")}
+            />
+          </label>
 
-        <label htmlFor="happy-cliente">
-          Clientes satisfeitos
-          <input
-            type="text"
-            id="happy-cliente"
-            {...register("happy-cliente")}
-          />
-        </label>
+          <input className="btnSubmit" type="submit" value="Editar" />
+        </form>
 
-        <input className="btnSubmit" type="submit" value="Editar" />
-      </form>
-
-      <div className="services">
-        <h3>Seus serviços</h3>
-        <List>
-          {services.map((item) => (
-            <li key={item.id}>
-              <Image>
-                <img src={item.portfolio[0]} alt="" />
-              </Image>
-              <Info>
-                <span>Merriage</span>
-                <h2>{item.name}</h2>
-                <SeeMore to={item.id}>Editar</SeeMore>
-              </Info>
-            </li>
-          ))}
-        </List>
-      </div>
-    </DashboardDiv>
+        <div className="services">
+          <h3>Seus serviços</h3>
+          <List>
+            {services.map((item, index) => (
+              <li key={item.id}>
+                <Image>
+                  <img src={item.portfolio[0]} alt="" />
+                </Image>
+                <Info>
+                  <span>Merriage</span>
+                  <h2>{item.name}</h2>
+                  <SeeMore
+                    to={item.id}
+                    onClick={() => {
+                      setId(item.id);
+                      setIndex(index);
+                      setModalIsOpen(true);
+                    }}
+                  >
+                    Editar
+                  </SeeMore>
+                </Info>
+              </li>
+            ))}
+          </List>
+        </div>
+      </DashboardDiv>
+    </>
   );
 }
 
